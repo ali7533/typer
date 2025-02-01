@@ -1,0 +1,76 @@
+
+.keyboardContainer {
+    padding: 20px;
+    position: relative;
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 0px;
+}
+
+
+.key {
+    background-color:  rgb(76, 76, 76);;
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-column: span 2;
+    font-size: 1em;
+    text-align: center;
+}
+
+.key:hover {
+  border: 1px solid #eeeeee;
+  
+}
+
+.backspace {
+    grid-column: span 4;
+}
+
+.tab {
+    grid-column: span 3;
+}
+
+.backslash {
+    grid-column: span 3;
+}
+
+.capslock {
+    grid-column: span 4;
+}
+
+.enter1 {
+    grid-column: span 4;
+}
+
+.leftshift {
+    grid-column: span 5;
+}
+
+.rightshift {
+    grid-column: span 5;
+}
+
+.leftctrl {
+    grid-column: span 3;
+}
+
+.command {
+    grid-column: span 3;
+}
+
+.space {
+    grid-column: span 13;
+}
+.active-with-shift{
+    background-color: rgba(95, 95, 95, 0.081);
+    border-width:4px;
+}
+.active-without-shift{
+    background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+.englishValue{
+    color: transparent;
+}
