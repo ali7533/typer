@@ -2,6 +2,8 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import './style.css'
 function KeyBoard({keyboard,keyboardType,initialDataN,currentIndexOfTyping}) {
     let [isenglishKeyBoard,setIsEnglishKeyBoard]=useState(keyboardType=='english'?'englishValue':'')
+    
+    let [widthOfScreen,setWidthOfScreen]=useState(window.innerWidth)
     useEffect(()=>{
         addEventListener('keydown',(e)=>{
             e.preventDefault()
@@ -13,8 +15,9 @@ function KeyBoard({keyboard,keyboardType,initialDataN,currentIndexOfTyping}) {
             e.preventDefault()
         })
     },[])
-    return (
-        <div className=' w-full  p-5 col-span-12'>
+    return (<>
+        {widthOfScreen>1000?
+            <div className=' w-full  p-5 col-span-12'>
             <div className='keyboardContainer w-full  rounded-lg bg-slate-700 '>
                 {keyboard.map((v,i)=>{
                     
@@ -78,7 +81,9 @@ function KeyBoard({keyboard,keyboardType,initialDataN,currentIndexOfTyping}) {
                 })}
             </div>
         </div>
-    )
+        :''}
+
+    </>)
 }
 
 export default KeyBoard

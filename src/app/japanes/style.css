@@ -1,0 +1,33 @@
+@keyframes fade {
+    0% {
+        background-color:rgb(50 50 255) ;
+    }
+    90% {
+        background-color:rgb(50 50 255) ;
+    }
+    100% {
+        background-color:rgb(34 197 94);
+    }
+    
+}
+
+.checked11{
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: fade;
+}
+.checked111{
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: fade;
+}

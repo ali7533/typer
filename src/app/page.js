@@ -10,13 +10,10 @@ export default function Home() {
       <div className="p-16 text-center font-bold"style={{gridArea:"3 /1/span 1/span 12"}}>
         Learn Typing
       </div>
-      <div className="p-16 col-span-12 grid grid-cols-12 gap-4" style={{gridArea:"4 /1/span 1/span 12"}}>
-        <Link href='/malayalam' className='shadow-[3px_5px_11px_rgba(0,0,0,.7)] text-center rounded-md'>Malayalam</Link>
-        <Link href='/english' className='shadow-[3px_5px_11px_rgba(0,0,0,.7)] text-center rounded-md'>English</Link>
-        <Link href='/hindi' className='shadow-[3px_5px_11px_rgba(0,0,0,.7)] text-center rounded-md'>Hindi</Link>
-        <Link href='/english' className='shadow-[3px_5px_11px_rgba(0,0,0,.7)] text-center rounded-md'>Tamil</Link>
-        <Link href='/english' className='shadow-[3px_5px_11px_rgba(0,0,0,.7)] text-center rounded-md'>Talugu</Link>
-        <Link href='/english' className='shadow-[3px_5px_11px_rgba(0,0,0,.7)] text-center rounded-md'>kannada</Link>
+      <div className="p-4 md:p-16 col-span-12 grid grid-cols-12 gap-4" style={{gridArea:"4 /1/span 1/span 12"}}>
+        <Link href='/malayalam' className='shadow-[3px_5px_11px_rgba(0,0,0,.7)] text-center col-span-12 md:col-span-3 lg:col-span-3 rounded-md'>Malayalam</Link>
+        <Link href='/english' className='shadow-[3px_5px_11px_rgba(0,0,0,.7)] text-center col-span-12 md:col-span-3 lg:col-span-3 rounded-md'>English</Link>
+        <Link href='/hindi' className='shadow-[3px_5px_11px_rgba(0,0,0,.7)] text-center col-span-12 md:col-span-3 lg:col-span-3 rounded-md'>Hindi</Link>
       </div>
     </div>
   );
